@@ -12,4 +12,17 @@ function zebbylion() {
     btnText.innerHTML = "Read less";
     moreText.style.display = "inline";
   }
+  var dot = document.getElementById("dot");
+  var moreeText = document.getElementById("moree");
+  var buttonText = document.getElementById("button");
+
+  if (dot.style.display === "none") {
+    dot.style.display = "inline";
+    buttonText.innerHTML = "Read more";
+    moreeText.style.display = "none";
+  } else {
+    dot.style.display = "none";
+    buttonText.innerHTML = "Read less";
+    moreeText.style.display = "inline";
+  }
 }
