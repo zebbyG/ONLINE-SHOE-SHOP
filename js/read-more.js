@@ -1,4 +1,5 @@
-function zebbylion() {
+//How we work read-more button
+function howWeWork() {
   var dots = document.getElementById("dots");
   var moreText = document.getElementById("more");
   var btnText = document.getElementById("myBtn");
@@ -12,17 +13,23 @@ function zebbylion() {
     btnText.innerHTML = "Read less";
     moreText.style.display = "inline";
   }
-  var dot = document.getElementById("dot");
-  var moreeText = document.getElementById("moree");
-  var buttonText = document.getElementById("button");
+}
 
-  if (dot.style.display === "none") {
-    dot.style.display = "inline";
-    buttonText.innerHTML = "Read more";
-    moreeText.style.display = "none";
+//The shop read-more button
+
+function theShop() {
+  var shopDots = document.getElementById("dotsShop")
+  var shopMoreText = document.getElementById("moreTextShop")
+  var shopBtn = document.getElementById("btnShop")
+
+  if (shopDots.style.display === "none") {
+      shopDots.style.display = "inline";
+      shopBtn.innerHTML = "Read more";
+      shopMoreText.style.display = "none";
   } else {
-    dot.style.display = "none";
-    buttonText.innerHTML = "Read less";
-    moreeText.style.display = "inline";
+      shopDots.style.display = "none";
+      shopBtn.innerHTML = "Read less";
+      shopMoreText.style.display = "inline"
+
   }
 }
